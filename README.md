@@ -2,9 +2,9 @@
 Implementation of various network properties using pySpark and GraphFrames. The various output Graphs are present in the `Graphs` folder and the various csv output files are present in the `CSV` folder. The `stanford_graphs` folder contains the various input graphs.
 
 Run the following commands on any new terminal before running any code:
-`export SPARK_HOME=/usr/local/spark-1.6.2-bin-hadoop2.6`
-`export PYSPARK_PYTHON=/usr/bin/python2`
-`export PYSPARK_DRIVER_PYTHON=/usr/bin/python2`
+*`export SPARK_HOME=/usr/local/spark-1.6.2-bin-hadoop2.6`
+*`export PYSPARK_PYTHON=/usr/bin/python2`
+*`export PYSPARK_DRIVER_PYTHON=/usr/bin/python2`
 
 #### Degree: ####  
 * The various graphs have been plotted using matplotlib. 
