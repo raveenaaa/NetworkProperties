@@ -7,15 +7,22 @@ Run the following commands on any new terminal before running any code:
 * `export PYSPARK_DRIVER_PYTHON=/usr/bin/python2`
 
 #### Degree: ####  
-The various graphs have been plotted using matplotlib. The plot function gives us the plot of the various graphs in the degree.py file. The various csv files have been named according to their corresponding data files. Run the file using 
+The degree disstribution is the measure of the frequency of nodes that have a certain degree. The various graphs have been plotted using matplotlib. 
+
+Run the file using: 
   * `$SPARK_HOME/bin/pyspark --packages graphframes:graphframes:0.1.0-spark1.6 degree.py ./stanford_graphs/amazon.graph.large large`
     OR
   * `$SPARK_HOME/bin/pyspark --packages graphframes:graphframes:0.1.0-spark1.6 degree.py ./stanford_graphs/amazon.graph.small`
 
-2. centrality
-->The output of the file is in centrality.csv
+#### Centrality ####
+Centrality is a is a way to determine nodes that are important based on the structure of the graph. Here we have used *Closeness Centrality* which is a measure of the distance of a node to all other nodes. The output of the file is in centrality.csv
 
-3. articulation
-->The output of the file has been saved to articulation.csv
+Run the file using:
+* `$SPARK_HOME/bin/pyspark --packages graphframes:graphframes:0.1.0-spark1.6 centrality.py`
 
-The answers to various questions of the section has been saved to Answers.pdf
+#### Articulation ####
+Articulation points are vertices in the graph that when removed, create more components than there were originally.
+
+Run the file using:
+* `$SPARK_HOME/bin/pyspark --packages graphframes:graphframes:0.1.0-spark1.6 articulation.py 9_11_edgelist.txt`
+
