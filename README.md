@@ -9,7 +9,7 @@ Run the following commands on any new terminal before running any code:
 #### Degree: ####  
 The various graphs have been plotted using matplotlib. The plot function gives us the plot of the various graphs in the degree.py file. The various csv files have been named according to their corresponding data files. Run the file using 
   * `$SPARK_HOME/bin/pyspark --packages graphframes:graphframes:0.1.0-spark1.6 degree.py ./stanford_graphs/amazon.graph.large large`
-  * OR
+    OR
   * `$SPARK_HOME/bin/pyspark --packages graphframes:graphframes:0.1.0-spark1.6 degree.py ./stanford_graphs/amazon.graph.small`
 
 2. centrality
